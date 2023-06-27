@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-app</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+        <div class="loading"></div>
+    <div class="home_page">
+        <div class="home_page_detail">
+            <h4>Taska</h4>
+        </div>
+    </div>
+    <!--=====LOGIN PAGE===== -->
+    <div class="login_page">
+        <h4 class="logo">TASKA</h4>
+        <form id="login_form">
+            <h3 class="form_title">Login to Your Account</h3>
+
+            <div class="input_group">
+                <input type="email" placeholder="Email" class="username" name="email">
+            </div>
+            <div class="input_group">
+                <input type="password" name="password" placeholder="password" class="passwordlog">
+            </div>
+
+            <button type="submit" class="sign_in primarybtn">sign in</button>
+            <a href="forgotpassword.html" class="forgotpassword">forgot password?</a>
+
+            <p class="signup_text">Don't have an acount ? <button type="button" class="nextbtn secondarybtn">sign up</button></p>
+        </form>
+    </div>
+
+    <!-- ==SIGNUP PAGE== -->
+
+    <div class="signup_page">
+        <h4 class="logo">TASKA</h4>
+        <form id="signup_form">
+            <h3 class="form_title">Create Your Account</h3>
+
+            <div class="input_group">
+                <input type="email" placeholder="Email" class="email" name="email">
+            </div>
+
+            <div class="input_group">
+                <input type="password" name="password" placeholder="password" class="password">
+            </div>
+
+            <div class="input_group">
+                <input type="password" name="password" placeholder="confirm password" class="password2">
+            </div>
+
+            <button type="submit" class="sign_up primarybtn">sign up</button>
+            <p class="signup_text">Already have an acount ?<button type="button" class="backbtn secondarybtn">Login</button></p>
+        </form>
+            <div class="pop_up">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanls!</p>
+                <button type="button" class="back_login">Back to login</button>
+            </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

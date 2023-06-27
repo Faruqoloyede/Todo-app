@@ -1,0 +1,122 @@
+.login_page, .signup_page  {
+    margin-top: 30%;
+
+    .logo {
+        color: $primary-color;
+        font-weight: bold;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+    #login_form, #signup_form {
+        padding: 2rem 3rem;
+
+        .form_title {
+            font-size: 20px;
+            color: $text-color;
+            text-align: center;
+        }
+
+        .input_group {
+            position: relative;
+            border-bottom: 2px solid $primary-color;
+            margin: 40px 0;
+
+            input {
+                width: 100%;
+                padding: 0 5px;
+                height: 40px;
+                border: none;
+                color: #333;
+                outline: none;
+                background: none;
+
+                &::placeholder {
+                    color: $text-color;
+                    font-size: 18px;
+                }
+            }
+        }
+        .primarybtn {
+            background-color: $primary-color;
+            border: none;
+            outline: none;
+            color: $secondary-color;
+            width: 100%;
+            font-size: 20px;
+            padding: 20px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        a {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .signup_text {
+            margin-top: 30px;
+            text-align: center;
+            color: $text-color;
+        }
+
+        .secondarybtn {
+            background: none;
+            border: none;
+            outline: none;
+            color: $primary-color;
+            font-size: 18px;
+        }
+    }
+}
+
+.signup_page {
+    display: none;
+}
+
+.signup_page.show {
+    display: block;
+    transition: .5s;
+    transform-origin: right;
+}
+
+.login_page.hide {
+    display: none;
+}
+
+.pop_up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background-color: $secondary-color;
+    padding: 0 30px 30px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+    h2 {
+        color: black;
+        margin-top: 20px;
+    }
+    p{
+        color: $text-color;
+        margin: 10px 0 15px;
+    }
+    button {
+        background-color: $primary-color;
+        border: none;
+        outline: none;
+        color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+}
+
+.pop_up.open {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
